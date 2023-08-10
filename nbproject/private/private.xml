@@ -4,9 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04_capture.c</file>
-            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_input_capture.c</file>
-            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_timer0.c</file>
+            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04.c</file>
+            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_UART.c</file>
             <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04.h</file>
+            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_UART.h</file>
+            <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_input_capture.h</file>
             <file>file:/C:/Users/84935/MPLABXProjects/PIC16F877A_HCSR04_capture.X/PIC16F877A_timer0.h</file>
         </group>
     </open-files>

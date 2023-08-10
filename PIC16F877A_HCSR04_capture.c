@@ -11,6 +11,7 @@ void __interrupt() ISR(void)
     // Timer 0 overflow interrupt
     if(TMR0IF)
     {
+        TMR0 = 6;
         if(count++ == 100)
         {
             count = 0;

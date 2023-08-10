@@ -8,6 +8,7 @@
       <itemPath>PIC16F877A_HCSR04.h</itemPath>
       <itemPath>PIC16F877A_input_capture.h</itemPath>
       <itemPath>PIC16F877A_timer0.h</itemPath>
+      <itemPath>PIC16F877A_UART.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +21,7 @@
       <itemPath>PIC16F877A_input_capture.c</itemPath>
       <itemPath>PIC16F877A_HCSR04_capture.c</itemPath>
       <itemPath>PIC16F877A_timer0.c</itemPath>
+      <itemPath>PIC16F877A_UART.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
