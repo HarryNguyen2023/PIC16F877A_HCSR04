@@ -73,7 +73,7 @@ void UARTTransRcvInit()
 void UARTsendChar(char c)
 {
     // Check if the transmit register is empty
-    // while (!TMRT);
+    while (! TRMT);
     TXREG = c;
 }
 
@@ -92,18 +92,18 @@ char UARTrcvChar()
     return c;
 }
 
-// Function to receive string via UART interurpt
-bool UARTrcvString(char *rcv_buffer, uint16_t length)
+// Function to receive string via UART interrupt
+int UARTrcvString(char *rcv_buffer, uint16_t length)
 {
     if (uart_str_idx == length)
     {
         rcv_buffer[uart_str_idx] = '\0';
         uart_str_idx = 0;
-        return true;
+        return 1;
     }
     else
     {
         rcv_buffer[uart_str_idx++] = UARTrcvChar();
-        return false;
+        return 0;
     }
 }

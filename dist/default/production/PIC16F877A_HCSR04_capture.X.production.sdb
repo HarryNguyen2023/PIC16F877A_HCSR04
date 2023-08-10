@@ -12,7 +12,7 @@ DONE 1
 IDLE 0
 DONE 1
 ]
-"32 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
+"46 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [e E893 pre_scaler `ui
 TIMER0_DIV_1 1
 TIMER0_DIV_2 2
@@ -41,12 +41,48 @@ TIMER0_DIV_256 256
 TIMER0_RISING 0
 TIMER0_FALLING 1
 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"417 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+"433
+[v _scale scale `(d  1 s 4 scale ]
+"505
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\xxtofl.c
@@ -58,16 +94,18 @@ TIMER0_FALLING 1
 "6 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [v _trigConfig trigConfig `(v  1 s 1 trigConfig ]
 "14
-[v _calDistance calDistance `(d  1 s 4 calDistance ]
+[v _calDistance calDistance `(f  1 s 4 calDistance ]
 "24
 [v _hcsr04Init hcsr04Init `(v  1 e 1 0 ]
 "33
 [v _hcsr04Trigger hcsr04Trigger `(v  1 e 1 0 ]
 "43
 [v _hcsr04Distance hcsr04Distance `(v  1 e 1 0 ]
-"9 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
+"64
+[v _getDistance getDistance `(f  1 e 4 0 ]
+"15 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [v _ISR ISR `II(v  1 e 1 0 ]
-"29
+"42
 [v _main main `(v  1 e 1 0 ]
 "6 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_input_capture.c
 [v _timer1Init timer1Init `(v  1 s 1 timer1Init ]
@@ -85,6 +123,14 @@ TIMER0_FALLING 1
 [v _timer0SetPrescaler timer0SetPrescaler `(v  1 s 1 timer0SetPrescaler ]
 "63
 [v _timer0TimerInit timer0TimerInit `(v  1 e 1 0 ]
+"6 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_UART.c
+[v _UARTTransInit UARTTransInit `(v  1 e 1 0 ]
+"73
+[v _UARTsendChar UARTsendChar `(v  1 e 1 0 ]
+"81
+[v _UARTsendString UARTsendString `(v  1 e 1 0 ]
+"88
+[v _UARTrcvChar UARTrcvChar `(uc  1 e 1 0 ]
 "23 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04.h
 [v _hcsr04_state hcsr04_state `uc  1 e 1 0 ]
 "24
@@ -92,7 +138,9 @@ TIMER0_FALLING 1
 "25
 [v _fallT2 fallT2 `ui  1 e 2 0 ]
 "26
-[v _hcsr04_distance hcsr04_distance `d  1 e 4 0 ]
+[v _hcsr04_distance hcsr04_distance `f  1 e 4 0 ]
+"10 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X/PIC16F877A_UART.h
+[v _uart_str_idx uart_str_idx `ui  1 e 2 0 ]
 "60 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "635
@@ -101,6 +149,14 @@ TIMER0_FALLING 1
 [v _CCPR1 CCPR1 `VEus  1 e 2 @21 ]
 "907
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+"1060
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1067
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"2081
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2421
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
 "2439
 [v _CCP1IE CCP1IE `VEb  1 e 0 @1122 ]
 "2442
@@ -113,6 +169,8 @@ TIMER0_FALLING 1
 [v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
 "2454
 [v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2520
+[v _CREN CREN `VEb  1 e 0 @196 ]
 "2574
 [v _GIE GIE `VEb  1 e 0 @95 ]
 "2634
@@ -125,8 +183,16 @@ TIMER0_FALLING 1
 [v _PS2 PS2 `VEb  1 e 0 @1034 ]
 "2649
 [v _PSA PSA `VEb  1 e 0 @1035 ]
+"2745
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
 "2754
 [v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2799
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2817
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2847
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
 "2850
 [v _T0CS T0CS `VEb  1 e 0 @1037 ]
 "2859
@@ -147,14 +213,34 @@ TIMER0_FALLING 1
 [v _TRISA4 TRISA4 `VEb  1 e 0 @1068 ]
 "2970
 [v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"2982
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2985
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
 "2988
 [v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
-"6 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
+"3021
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3027
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3036
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"358 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\powers.c
+[v __powers_ _powers_ `DC[13]d  1 e 52 0 ]
+"39
+[v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
+"8 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [v _count count `uc  1 e 1 0 ]
-"29
+"9
+[v _dist dist `f  1 e 4 0 ]
+"12
+[v _send_buff send_buff `[35]uc  1 e 35 0 ]
+"42
 [v _main main `(v  1 e 1 0 ]
 {
-"41
+"58
 } 0
 "63 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_timer0.c
 [v _timer0TimerInit timer0TimerInit `(v  1 e 1 0 ]
@@ -193,10 +279,227 @@ TIMER0_FALLING 1
 {
 "29
 } 0
-"9 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
+"6 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_UART.c
+[v _UARTTransInit UARTTransInit `(v  1 e 1 0 ]
+{
+"22
+} 0
+"15 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [v _ISR ISR `II(v  1 e 1 0 ]
 {
-"27
+"40
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
+"533
+[v sprintf@fval fval `d  1 a 4 50 ]
+[u S376 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+"543
+[v sprintf@tmpval tmpval `S376  1 a 4 43 ]
+"545
+[v sprintf@val val `ul  1 a 4 37 ]
+"517
+[v sprintf@prec prec `i  1 a 2 48 ]
+"534
+[v sprintf@eexp eexp `i  1 a 2 41 ]
+"525
+[v sprintf@flag flag `us  1 a 2 35 ]
+"512
+[v sprintf@c c `uc  1 a 1 54 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 34 ]
+"505
+[v sprintf@sp sp `*.5uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 20 ]
+"550
+[v sprintf@sp sp `*.5uc  1 a 1 47 ]
+"1567
+} 0
+"433
+[v _scale scale `(d  1 s 4 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"436
+[v scale@scl scl `c  1 a 1 70 ]
+"449
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+"41
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"417 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"421
+[v fround@prec prec `uc  1 a 1 71 ]
+"426
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 7 ]
+"30
+} 0
+"60 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 4 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 4 4 ]
+"101
+} 0
+"60 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 4 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 4 4 ]
+"101
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 1 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 0 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 71 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 12 ]
+[v ___flsub@b b `d  1 p 4 16 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 72 ]
+[v ___fladd@a a `d  1 p 4 76 ]
+"237
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
 } 0
 "33 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [v _hcsr04Trigger hcsr04Trigger `(v  1 e 1 0 ]
@@ -224,12 +527,12 @@ TIMER0_FALLING 1
 "35
 } 0
 "14 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
-[v _calDistance calDistance `(d  1 s 4 calDistance ]
+[v _calDistance calDistance `(f  1 s 4 calDistance ]
 {
 "17
-[v calDistance@distance distance `d  1 a 4 60 ]
+[v calDistance@distance distance `f  1 a 4 60 ]
 "16
-[v calDistance@time time `d  1 a 4 56 ]
+[v calDistance@time time `f  1 a 4 56 ]
 "19
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\xxtofl.c
@@ -250,17 +553,17 @@ TIMER0_FALLING 1
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S454 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S574 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S459 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S462 . 4 `l 1 i 4 0 `d 1 f 4 0 `S454 1 fAsBytes 4 0 `S459 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S462  1 a 4 46 ]
+[s S579 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S582 . 4 `l 1 i 4 0 `d 1 f 4 0 `S574 1 fAsBytes 4 0 `S579 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S582  1 a 4 46 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 40 ]
-[s S531 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S651 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S534 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S531 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S534  1 a 2 50 ]
+[u S654 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S651 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S654  1 a 2 50 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11
@@ -305,4 +608,29 @@ TIMER0_FALLING 1
 [v ___fldiv@a a `d  1 p 4 0 ]
 [v ___fldiv@b b `d  1 p 4 4 ]
 "185
+} 0
+"64 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
+[v _getDistance getDistance `(f  1 e 4 0 ]
+{
+"67
+} 0
+"81 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_UART.c
+[v _UARTsendString UARTsendString `(v  1 e 1 0 ]
+{
+[v UARTsendString@str str `*.5uc  1 a 1 wreg ]
+"83
+[v UARTsendString@i i `i  1 a 2 2 ]
+"81
+[v UARTsendString@str str `*.5uc  1 a 1 wreg ]
+"83
+[v UARTsendString@str str `*.5uc  1 a 1 4 ]
+"85
+} 0
+"73
+[v _UARTsendChar UARTsendChar `(v  1 e 1 0 ]
+{
+[v UARTsendChar@c c `uc  1 a 1 wreg ]
+[v UARTsendChar@c c `uc  1 a 1 wreg ]
+[v UARTsendChar@c c `uc  1 a 1 0 ]
+"78
 } 0

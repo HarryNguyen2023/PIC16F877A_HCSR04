@@ -11,10 +11,10 @@ static void trigConfig()
 }
 
 // Function to calculate the distance from the HCSR04 sensor
-static double calDistance()
+static float calDistance()
 {
-    double time = ((fallT2 - riseT1) / 2.0) * (4 / _XTAL_FREQ);
-    double distance = SOUND_SPEED * time;
+    float time = ((fallT2 - riseT1) / 2.0) * (4 / _XTAL_FREQ);
+    float distance = SOUND_SPEED * time;
     return distance;
 }
 
@@ -33,7 +33,7 @@ void hcsr04Init()
 void hcsr04Trigger()
 {
     TRIG1 = 1;
-    __delay_us(2);
+    __delay_us(10);
     TRIG1 = 0;
     // Set the timer 1 pre load register to 0
     TMR1 = 0;
@@ -61,7 +61,7 @@ void hcsr04Distance()
 }
 
 // Function to get the distance of the HCSR04 sensor
-double getDistance()
+float getDistance()
 {
     return hcsr04_distance;
 }

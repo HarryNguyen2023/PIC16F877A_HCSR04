@@ -227,10 +227,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `ui
 ]
 "26
-[; ;./PIC16F877A_HCSR04.h: 26: double hcsr04_distance = 0;
-[v _hcsr04_distance `d ~T0 @X0 1 e ]
+[; ;./PIC16F877A_HCSR04.h: 26: float hcsr04_distance = 0;
+[v _hcsr04_distance `f ~T0 @X0 1 e ]
 [i _hcsr04_distance
--> -> 0 `i `d
+-> -> 0 `i `f
 ]
 "6 PIC16F877A_HCSR04.c
 [; ;PIC16F877A_HCSR04.c: 6: static void trigConfig()
@@ -251,21 +251,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 95 ]
 }
 "14
-[; ;PIC16F877A_HCSR04.c: 14: static double calDistance()
-[v _calDistance `(d ~T0 @X0 1 sf ]
+[; ;PIC16F877A_HCSR04.c: 14: static float calDistance()
+[v _calDistance `(f ~T0 @X0 1 sf ]
 "15
 [; ;PIC16F877A_HCSR04.c: 15: {
 {
 [e :U _calDistance ]
 [f ]
 "16
-[; ;PIC16F877A_HCSR04.c: 16:     double time = ((fallT2 - riseT1) / 2.0) * (4 / 16000000);
-[v _time `d ~T0 @X0 1 a ]
-[e = _time * / -> - _fallT2 _riseT1 `d .2.0 -> / -> -> 4 `i `l -> 16000000 `l `d ]
+[; ;PIC16F877A_HCSR04.c: 16:     float time = ((fallT2 - riseT1) / 2.0) * (4 / 16000000);
+[v _time `f ~T0 @X0 1 a ]
+[e = _time -> * / -> - _fallT2 _riseT1 `d .2.0 -> / -> -> 4 `i `l -> 16000000 `l `d `f ]
 "17
-[; ;PIC16F877A_HCSR04.c: 17:     double distance = 34000 * time;
-[v _distance `d ~T0 @X0 1 a ]
-[e = _distance * -> -> 34000 `l `d _time ]
+[; ;PIC16F877A_HCSR04.c: 17:     float distance = 34000 * time;
+[v _distance `f ~T0 @X0 1 a ]
+[e = _distance * -> -> 34000 `l `f _time ]
 "18
 [; ;PIC16F877A_HCSR04.c: 18:     return distance;
 [e ) _distance ]
@@ -304,8 +304,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;PIC16F877A_HCSR04.c: 35:     RD0 = 1;
 [e = _RD0 -> -> 1 `i `b ]
 "36
-[; ;PIC16F877A_HCSR04.c: 36:     _delay((unsigned long)((2)*(16000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+[; ;PIC16F877A_HCSR04.c: 36:     _delay((unsigned long)((10)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
 "37
 [; ;PIC16F877A_HCSR04.c: 37:     RD0 = 0;
 [e = _RD0 -> -> 0 `i `b ]
@@ -372,8 +372,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 99 ]
 }
 "64
-[; ;PIC16F877A_HCSR04.c: 64: double getDistance()
-[v _getDistance `(d ~T0 @X0 1 ef ]
+[; ;PIC16F877A_HCSR04.c: 64: float getDistance()
+[v _getDistance `(f ~T0 @X0 1 ef ]
 "65
 [; ;PIC16F877A_HCSR04.c: 65: {
 {

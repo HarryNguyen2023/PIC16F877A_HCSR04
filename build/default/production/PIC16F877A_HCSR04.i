@@ -1880,12 +1880,12 @@ enum state
 uint8_t hcsr04_state = IDLE;
 uint16_t riseT1 = 0;
 uint16_t fallT2 = 0;
-double hcsr04_distance = 0;
+float hcsr04_distance = 0;
 
 void hcsr04Init(void);
 void hcsr04Trigger(void);
 void hcsr04Distance(void);
-double getDistance(void);
+float getDistance(void);
 # 1 "PIC16F877A_HCSR04.c" 2
 
 
@@ -1900,10 +1900,10 @@ static void trigConfig()
 }
 
 
-static double calDistance()
+static float calDistance()
 {
-    double time = ((fallT2 - riseT1) / 2.0) * (4 / 16000000);
-    double distance = 34000 * time;
+    float time = ((fallT2 - riseT1) / 2.0) * (4 / 16000000);
+    float distance = 34000 * time;
     return distance;
 }
 
@@ -1922,7 +1922,7 @@ void hcsr04Init()
 void hcsr04Trigger()
 {
     RD0 = 1;
-    _delay((unsigned long)((2)*(16000000/4000000.0)));
+    _delay((unsigned long)((10)*(16000000/4000000.0)));
     RD0 = 0;
 
     TMR1 = 0;
@@ -1950,7 +1950,7 @@ void hcsr04Distance()
 }
 
 
-double getDistance()
+float getDistance()
 {
     return hcsr04_distance;
 }

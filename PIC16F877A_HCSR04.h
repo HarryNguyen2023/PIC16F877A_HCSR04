@@ -23,11 +23,11 @@ enum state
 uint8_t hcsr04_state = IDLE;
 uint16_t riseT1 = 0;
 uint16_t fallT2 = 0;
-double hcsr04_distance = 0;
+float hcsr04_distance = 0;
 
 void hcsr04Init(void);
 void hcsr04Trigger(void);
 void hcsr04Distance(void);
-double getDistance(void);
+float getDistance(void);
 
 #endif

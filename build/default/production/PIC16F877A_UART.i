@@ -1,4 +1,4 @@
-# 1 "PIC16F877A_HCSR04_capture.c"
+# 1 "PIC16F877A_UART.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,22 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "PIC16F877A_HCSR04_capture.c" 2
-# 1 "./config.h" 1
-
-
-
-
-#pragma config FOSC = HS
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config BOREN = ON
-#pragma config LVP = ON
-#pragma config CPD = OFF
-#pragma config WRT = OFF
-#pragma config CP = OFF
-
-
+# 1 "PIC16F877A_UART.c" 2
+# 1 "./PIC16F877A_UART.h" 1
 
 
 
@@ -1871,76 +1857,13 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
-# 17 "./config.h" 2
-# 1 "PIC16F877A_HCSR04_capture.c" 2
-
-# 1 "./PIC16F877A_HCSR04.h" 1
-
-
-
-# 1 "./PIC16F877A_input_capture.h" 1
-
-
-
-
-
-void captureRisingInit(void);
-void captureFallingInit(void);
-void changeModeRising(void);
-void changeModeFalling(void);
-# 4 "./PIC16F877A_HCSR04.h" 2
-# 16 "./PIC16F877A_HCSR04.h"
-enum state
-{
-    IDLE,
-    DONE
-};
-
-
-uint8_t hcsr04_state = IDLE;
-uint16_t riseT1 = 0;
-uint16_t fallT2 = 0;
-float hcsr04_distance = 0;
-
-void hcsr04Init(void);
-void hcsr04Trigger(void);
-void hcsr04Distance(void);
-float getDistance(void);
-# 2 "PIC16F877A_HCSR04_capture.c" 2
-
-# 1 "./PIC16F877A_timer0.h" 1
+# 4 "./PIC16F877A_UART.h" 2
 
 
 
 
 
 
-enum pre_scaler
-{
-    TIMER0_DIV_1 = 1,
-    TIMER0_DIV_2 = 2,
-    TIMER0_DIV_4 = 4,
-    TIMER0_DIV_8 = 8,
-    TIMER0_DIV_16 = 16,
-    TIMER0_DIV_32 = 32,
-    TIMER0_DIV_64 = 64,
-    TIMER0_DIV_128 = 128,
-    TIMER0_DIV_256 = 256
-};
-
-
-enum timer0_edge
-{
-    TIMER0_RISING,
-    TIMER0_FALLING
-};
-
-void timer0TimerInit(uint16_t prescaler);
-void timer0CounterInit(uint16_t prescaler, uint8_t edge);
-# 3 "PIC16F877A_HCSR04_capture.c" 2
-
-# 1 "./PIC16F877A_UART.h" 1
-# 10 "./PIC16F877A_UART.h"
 uint16_t uart_str_idx = 0;
 
 void UARTTransInit(void);
@@ -1950,153 +1873,113 @@ void UARTsendChar(char c);
 void UARTsendString(char *str);
 char UARTrcvChar(void);
 int UARTrcvString(char *rcv_buffer, uint16_t length);
-# 4 "PIC16F877A_HCSR04_capture.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 1 3
-
-
-
-# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__size_t.h" 1 3
-
-
-
-typedef unsigned size_t;
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 2 3
-# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__null.h" 1 3
-# 6 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 2 3
+# 1 "PIC16F877A_UART.c" 2
 
 
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdarg.h" 1 3
-
-
-
-
-
-
-typedef void * va_list[1];
-
-#pragma intrinsic(__va_start)
-extern void * __va_start(void);
-
-#pragma intrinsic(__va_arg)
-extern void * __va_arg(void *, ...);
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 2 3
-# 43 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 3
-struct __prbuf
-{
- char * ptr;
- void (* func)(char);
-};
-# 85 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\errno.h" 1 3
-# 29 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\errno.h" 3
-extern int errno;
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 86 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 2 3
-
-
-extern int cprintf(char *, ...);
-#pragma printf_check(cprintf)
-
-
-
-extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-# 180 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\stdio.h" 3
-#pragma printf_check(vprintf) const
-#pragma printf_check(vsprintf) const
-
-extern char * gets(char *);
-extern int puts(const char *);
-extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-
-#pragma printf_check(printf) const
-#pragma printf_check(sprintf) const
-extern int sprintf(char *, const char *, ...);
-extern int printf(const char *, ...);
-# 5 "PIC16F877A_HCSR04_capture.c" 2
-
-
-
-uint8_t count = 0;
-float dist;
-
-
-char send_buff[35];
-
-
-void __attribute__((picinterrupt(("")))) ISR(void)
+void UARTTransInit()
 {
 
-    if (TMR0IF)
-    {
-        TMR0 = 6;
-        if (count++ == 100)
-        {
-            count = 0;
-            hcsr04Trigger();
-            dist = getDistance();
-            if (dist > 0)
-            {
-                sprintf(send_buff, "Distance to obstacle: %.3f cm\n", dist);
-                UARTsendString(send_buff);
-            }
-        }
-        TMR0IF = 0;
-    }
+    TRISC6 = 1;
+    TRISC7 = 1;
 
-    if (CCP1IF)
-    {
-        hcsr04Distance();
-        CCP1IF = 0;
-    }
+    SPEN = 1;
+
+    SYNC = 0;
+
+    TX9 = 0;
+
+    TXEN = 1;
+
+    BRGH = 1;
+    SPBRG = ((16000000) / 9600) / 16 - 1;
 }
 
-void main(void)
+
+void UARTRcvInit()
 {
 
-    TMR0 = 6;
-    timer0TimerInit(TIMER0_DIV_16);
+    TRISC6 = 1;
+    TRISC7 = 1;
+
+    SPEN = 1;
+
+    SYNC = 0;
+
+    RX9 = 0;
+
+    CREN = 1;
+
+    BRGH = 1;
+    SPBRG = ((16000000) / 9600) / 16 - 1;
+
+    RCIE = 1;
+    PEIE = 1;
+    GIE = 1;
+}
 
 
-    hcsr04Init();
+void UARTTransRcvInit()
+{
+
+    TRISC6 = 1;
+    TRISC7 = 1;
+
+    SPEN = 1;
+
+    SYNC = 0;
+
+    TX9 = 0;
+    RX9 = 0;
+
+    TXEN = 1;
+    CREN = 1;
+
+    BRGH = 1;
+    SPBRG = ((16000000) / 9600) / 16 - 1;
+
+    RCIE = 1;
+    PEIE = 1;
+    GIE = 1;
+}
 
 
-    UARTTransInit();
+void UARTsendChar(char c)
+{
 
-    while (1)
+    while (! TRMT);
+    TXREG = c;
+}
+
+
+void UARTsendString(char *str)
+{
+    for (int i = 0; str[i] != '\0'; ++i)
+        UARTsendChar(str[i]);
+}
+
+
+char UARTrcvChar()
+{
+    char c;
+    c = RCREG;
+    return c;
+}
+
+
+int UARTrcvString(char *rcv_buffer, uint16_t length)
+{
+    if (uart_str_idx == length)
     {
+        rcv_buffer[uart_str_idx] = '\0';
+        uart_str_idx = 0;
+        return 1;
     }
-    return;
+    else
+    {
+        rcv_buffer[uart_str_idx++] = UARTrcvChar();
+        return 0;
+    }
 }
