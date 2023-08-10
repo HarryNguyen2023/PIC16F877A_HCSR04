@@ -22,12 +22,6 @@ void __interrupt() ISR(void)
         {
             count = 0;
             hcsr04Trigger();
-            dist = getDistance();
-            if (dist > 0)
-            {
-                sprintf(send_buff, "Distance to obstacle: %.3f cm\n", dist);
-                UARTsendString(send_buff);
-            }
         }
         TMR0IF = 0;
     }
@@ -35,6 +29,12 @@ void __interrupt() ISR(void)
     if (CCP1IF)
     {
         hcsr04Distance();
+        dist = getDistance();
+        if(dist > 0)
+        {
+            sprintf(send_buff, "Distance to obstacle: %.3f cm\r\n", hcsr04_distance);
+            UARTsendString(send_buff);
+        }
         CCP1IF = 0;
     }
 }

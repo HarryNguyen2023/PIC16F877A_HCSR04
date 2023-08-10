@@ -1897,10 +1897,10 @@ enum state
 };
 
 
-uint8_t hcsr04_state = IDLE;
-uint16_t riseT1 = 0;
-uint16_t fallT2 = 0;
-float hcsr04_distance = 0;
+extern uint8_t hcsr04_state;
+extern uint16_t riseT1;
+extern uint16_t fallT2;
+extern float hcsr04_distance;
 
 void hcsr04Init(void);
 void hcsr04Trigger(void);
@@ -2066,12 +2066,6 @@ void __attribute__((picinterrupt(("")))) ISR(void)
         {
             count = 0;
             hcsr04Trigger();
-            dist = getDistance();
-            if (dist > 0)
-            {
-                sprintf(send_buff, "Distance to obstacle: %.3f cm\n", dist);
-                UARTsendString(send_buff);
-            }
         }
         TMR0IF = 0;
     }
@@ -2079,6 +2073,12 @@ void __attribute__((picinterrupt(("")))) ISR(void)
     if (CCP1IF)
     {
         hcsr04Distance();
+        dist = getDistance();
+        if(dist > 0)
+        {
+            sprintf(send_buff, "Distance to obstacle: %.3f cm\r\n", hcsr04_distance);
+            UARTsendString(send_buff);
+        }
         CCP1IF = 0;
     }
 }

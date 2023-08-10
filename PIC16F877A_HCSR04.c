@@ -5,7 +5,7 @@
 // Trigger pins configuration
 static void trigConfig()
 {
-    // Sequentailly define the trigger pins of each HCSR04 sensor
+    // Sequentially define the trigger pins of each HCSR04 sensor
     TRISD0 = 0;
     TRIG1 = 0;
 }
@@ -13,10 +13,16 @@ static void trigConfig()
 // Function to calculate the distance from the HCSR04 sensor
 static float calDistance()
 {
-    float time = ((fallT2 - riseT1) / 2.0) * (4 / _XTAL_FREQ);
+    float time = ((fallT2 - riseT1) / 2.0) / _XTAL_FREQ * 4;
     float distance = SOUND_SPEED * time;
     return distance;
 }
+
+// Define some private variables
+uint8_t hcsr04_state = IDLE;
+uint16_t riseT1 = 0;
+uint16_t fallT2 = 0;
+float hcsr04_distance = 0;
 
 // ----------------------------------Functions that interface with user----------------------------------------
 

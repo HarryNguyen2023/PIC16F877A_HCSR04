@@ -3,11 +3,7 @@
 [d edition pro ]
 [d chip 16F877A ]
 [d frameptr 0 ]
-"23 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04.h
-[e E882 state `uc
-IDLE 0
-DONE 1
-]
+"22 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [e E882 state `uc
 IDLE 0
 DONE 1
@@ -95,13 +91,13 @@ TIMER0_FALLING 1
 [v _trigConfig trigConfig `(v  1 s 1 trigConfig ]
 "14
 [v _calDistance calDistance `(f  1 s 4 calDistance ]
-"24
+"30
 [v _hcsr04Init hcsr04Init `(v  1 e 1 0 ]
-"33
+"39
 [v _hcsr04Trigger hcsr04Trigger `(v  1 e 1 0 ]
-"43
+"49
 [v _hcsr04Distance hcsr04Distance `(v  1 e 1 0 ]
-"64
+"70
 [v _getDistance getDistance `(f  1 e 4 0 ]
 "15 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [v _ISR ISR `II(v  1 e 1 0 ]
@@ -131,14 +127,6 @@ TIMER0_FALLING 1
 [v _UARTsendString UARTsendString `(v  1 e 1 0 ]
 "88
 [v _UARTrcvChar UARTrcvChar `(uc  1 e 1 0 ]
-"23 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X/PIC16F877A_HCSR04.h
-[v _hcsr04_state hcsr04_state `uc  1 e 1 0 ]
-"24
-[v _riseT1 riseT1 `ui  1 e 2 0 ]
-"25
-[v _fallT2 fallT2 `ui  1 e 2 0 ]
-"26
-[v _hcsr04_distance hcsr04_distance `f  1 e 4 0 ]
 "10 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X/PIC16F877A_UART.h
 [v _uart_str_idx uart_str_idx `ui  1 e 2 0 ]
 "60 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
@@ -231,6 +219,14 @@ TIMER0_FALLING 1
 [v __powers_ _powers_ `DC[13]d  1 e 52 0 ]
 "39
 [v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
+"22 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
+[v _hcsr04_state hcsr04_state `uc  1 e 1 0 ]
+"23
+[v _riseT1 riseT1 `ui  1 e 2 0 ]
+"24
+[v _fallT2 fallT2 `ui  1 e 2 0 ]
+"25
+[v _hcsr04_distance hcsr04_distance `f  1 e 4 0 ]
 "8 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04_capture.c
 [v _count count `uc  1 e 1 0 ]
 "9
@@ -254,10 +250,10 @@ TIMER0_FALLING 1
 [v timer0SetPrescaler@prescaler prescaler `ui  1 p 2 0 ]
 "58
 } 0
-"24 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
+"30 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [v _hcsr04Init hcsr04Init `(v  1 e 1 0 ]
 {
-"30
+"36
 } 0
 "6
 [v _trigConfig trigConfig `(v  1 s 1 trigConfig ]
@@ -294,25 +290,25 @@ TIMER0_FALLING 1
 {
 [v sprintf@sp sp `*.5uc  1 a 1 wreg ]
 "533
-[v sprintf@fval fval `d  1 a 4 50 ]
-[u S376 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+[v sprintf@fval fval `d  1 a 4 54 ]
+[u S372 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
 "543
-[v sprintf@tmpval tmpval `S376  1 a 4 43 ]
+[v sprintf@tmpval tmpval `S372  1 a 4 48 ]
 "545
-[v sprintf@val val `ul  1 a 4 37 ]
+[v sprintf@val val `ul  1 a 4 41 ]
 "517
-[v sprintf@prec prec `i  1 a 2 48 ]
+[v sprintf@prec prec `i  1 a 2 52 ]
 "534
-[v sprintf@eexp eexp `i  1 a 2 41 ]
+[v sprintf@eexp eexp `i  1 a 2 45 ]
 "525
-[v sprintf@flag flag `us  1 a 2 35 ]
+[v sprintf@flag flag `us  1 a 2 39 ]
 "512
-[v sprintf@c c `uc  1 a 1 54 ]
+[v sprintf@c c `uc  1 a 1 58 ]
 "507
-[v sprintf@ap ap `[1]*.4v  1 a 1 34 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 38 ]
 "505
 [v sprintf@sp sp `*.5uc  1 a 1 wreg ]
-[v sprintf@f f `*.24DCuc  1 p 1 20 ]
+[v sprintf@f f `*.24DCuc  1 p 1 24 ]
 "550
 [v sprintf@sp sp `*.5uc  1 a 1 47 ]
 "1567
@@ -461,24 +457,24 @@ TIMER0_FALLING 1
 "242 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@a a `d  1 p 4 12 ]
-[v ___flsub@b b `d  1 p 4 16 ]
+[v ___flsub@a a `d  1 p 4 16 ]
+[v ___flsub@b b `d  1 p 4 20 ]
 "250
 } 0
 "10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 11 ]
+[v ___fladd@grs grs `uc  1 a 1 75 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+[v ___fladd@bexp bexp `uc  1 a 1 74 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+[v ___fladd@aexp aexp `uc  1 a 1 73 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 8 ]
+[v ___fladd@signs signs `uc  1 a 1 72 ]
 "10
-[v ___fladd@b b `d  1 p 4 72 ]
-[v ___fladd@a a `d  1 p 4 76 ]
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
 "237
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\flneg.c
@@ -501,15 +497,15 @@ TIMER0_FALLING 1
 [v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
 } 0
-"33 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
+"39 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [v _hcsr04Trigger hcsr04Trigger `(v  1 e 1 0 ]
 {
-"40
+"46
 } 0
-"43
+"49
 [v _hcsr04Distance hcsr04Distance `(v  1 e 1 0 ]
 {
-"61
+"67
 } 0
 "85 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_input_capture.c
 [v _changeModeRising changeModeRising `(v  1 e 1 0 ]
@@ -530,9 +526,9 @@ TIMER0_FALLING 1
 [v _calDistance calDistance `(f  1 s 4 calDistance ]
 {
 "17
-[v calDistance@distance distance `f  1 a 4 60 ]
+[v calDistance@distance distance `f  1 a 4 64 ]
 "16
-[v calDistance@time time `f  1 a 4 56 ]
+[v calDistance@time time `f  1 a 4 60 ]
 "19
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\xxtofl.c
@@ -553,21 +549,21 @@ TIMER0_FALLING 1
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S574 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S570 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S579 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S582 . 4 `l 1 i 4 0 `d 1 f 4 0 `S574 1 fAsBytes 4 0 `S579 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S582  1 a 4 46 ]
+[s S575 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S578 . 4 `l 1 i 4 0 `d 1 f 4 0 `S570 1 fAsBytes 4 0 `S575 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S578  1 a 4 46 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 40 ]
-[s S651 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 41 ]
+[s S647 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S654 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S651 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S654  1 a 2 50 ]
+[u S650 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S647 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S650  1 a 2 50 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 44 ]
+[v ___flmul@aexp aexp `uc  1 a 1 40 ]
 "9
 [v ___flmul@sign sign `uc  1 a 1 39 ]
 "8
@@ -609,10 +605,10 @@ TIMER0_FALLING 1
 [v ___fldiv@b b `d  1 p 4 4 ]
 "185
 } 0
-"64 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
+"70 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_HCSR04.c
 [v _getDistance getDistance `(f  1 e 4 0 ]
 {
-"67
+"73
 } 0
 "81 C:\Users\84935\MPLABXProjects\PIC16F877A_HCSR04_capture.X\PIC16F877A_UART.c
 [v _UARTsendString UARTsendString `(v  1 e 1 0 ]

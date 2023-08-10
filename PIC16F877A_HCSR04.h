@@ -20,10 +20,10 @@ enum state
 };
 
 // Define some configuration variables
-uint8_t hcsr04_state = IDLE;
-uint16_t riseT1 = 0;
-uint16_t fallT2 = 0;
-float hcsr04_distance = 0;
+extern uint8_t hcsr04_state;
+extern uint16_t riseT1;
+extern uint16_t fallT2;
+extern float hcsr04_distance;
 
 void hcsr04Init(void);
 void hcsr04Trigger(void);
